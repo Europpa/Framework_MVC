@@ -8,14 +8,17 @@
 
 class indexController extends BaseController{
 
+    private $post;
+
     public function __construct(){
         parent::__construct();
+        $this->post = $this->loadModel('post');
     }
 
     public function index(){
         $post =  $this->loadModel('post');
         $this->_View->post = $post->getPost();
-        $this->_View->titulo = 'PORTADA';
+        $this->_View->titulo = 'Post Registrados';
         $this->_View->render('index');
     }
 }

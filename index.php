@@ -20,7 +20,6 @@ require_once APP_PATH . 'View.php';
 require_once APP_PATH . 'Model.php';
 require_once APP_PATH . 'Database.php';
 
-//echo $_GET['url'];
 /*$obj = new Request();
 echo $obj->getController()."<br>";
 echo $obj->getMethod()."<br>";
